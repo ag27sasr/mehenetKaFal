@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <iframe src="new.html" width="100%" height="50px" style="border: none;"></iframe>
+    
+
+    <!-- =====BOX ICONS===== -->
+
+
+    <title>Oil and Gold</title>
+</head>
+
+<body>
+ <!-- TradingView Widget -->
+    <nav id="ticker-tape">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+                async
+            >
+                {
+                    "symbols": [
+                        {"description": "", "proName": "NASDAQ:TSLA"},
+                        {"description": "", "proName": "NASDAQ:AAPL"},
+                        {"description": "", "proName": "NASDAQ:NVDA"},
+                        {"description": "", "proName": "NASDAQ:MSFT"},
+                        {"description": "", "proName": "NASDAQ:AMZN"},
+                        {"description": "", "proName": "NASDAQ:GOOGL"},
+                        {"description": "", "proName": "NASDAQ:META"},
+                        {"description": "", "proName": "NYSE:BRK.B"},
+                        {"description": "", "proName": "NYSE:LLY"},
+                        {"description": "", "proName": "NYSE:UNH"},
+                        {"description": "", "proName": "NYSE:V"},
+                        {"description": "", "proName": "NYSE:WMT"}
+                    ],
+                    "showSymbolLogo": true,
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "displayMode": "adaptive",
+                    "locale": "en"
+                }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </nav>
+
+<!-- TradingView Widget BEGIN -->
+<div class="widget-container">
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+</div>
+  <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>-->
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "500",
+  "height": "500",
+  "symbol": "CAPITALCOM:GOLD",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "light",
+  "style": "1",
+  "locale": "en",
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "details": true,
+  "calendar": false,
+  "studies": [
+    "STD;MACD",
+    "STD;Open%Interest",
+    "STD;RSI"
+  ],
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+
+<!-- TradingView Widget END -->
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+</div>
+  <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>-->
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "500",
+  "height": "500",
+  "symbol": "BLACKBULL:BRENT",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "light",
+  "style": "1",
+  "locale": "en",
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "details": true,
+  "calendar": false,
+  "studies": [
+    "STD;MACD",
+    "STD;Open%Interest",
+    "STD;RSI"
+  ],
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav bd-grid">Oil & Gold Analysis</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#news" class="nav__link">News</a></li>
+
+                    <!-- Commodity dropdown with hidden options initially -->
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" id="commodity-link">Commodity</a>
+                        <ul class="dropdown" id="commodity-dropdown">
+                            <li><a href="oil.html" class="dropdown__link">Oil</a></li>
+                            <li><a href="gold.html" class="dropdown__link">Gold</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Market Analysis<br><span class="home__title-color">Oil & Gold</span><br></h1>                
+
+                <a href="login.html" class="button">Login</a>
+            </div>
+
+
+        </section>
+<br>
+<br>
+<br>
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Oil And Gold </h2>
+                    <p class="about__text">Building a reliable forecasting model for oil and gold involves a combination
+                        of fundamental, technical, and statistical analysis, along with modern machine learning
+                        techniques.
+                        The choice of model depends on the time horizon (short-term vs. long-term), the specific market
+                        conditions</p>
+                </div>
+            </div>
+        </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--===== GLOBAL INVESTMENT MARKET 2023 =====-->
+<section class="investment-facts section" id="investment-facts">
+    <h2 class="section-title">Global Investment Market 2023</h2>
+
+    <div class="investment__container bd-grid">
+        <div>
+            <h2 class="investment__subtitle">Overview:</h2>
+            <p class="investment__text">Key highlights and statistics of the global investment market in 2023:</p>
+
+            <div class="investment__data">
+                <div class="investment__names">
+                    <i class='bx bxs-bar-chart-alt-2 investment__icon'></i>
+                    <span class="investment__name">Total Market Value</span>
+                </div>
+                <div class="investment__bar investment__total">
+                    <div class="investment__percentage" style="width: 100%;"></div>
+                </div>
+                <div>
+                    <span class="investment__value">$271 Trillion</span>
+                </div>
+            </div>
+
+            <div class="investment__data">
+                <div class="investment__names">
+                    <i class='bx bxs-building-house investment__icon'></i>
+                    <span class="investment__name">Fixed Income Share</span>
+                </div>
+                <div class="investment__bar investment__fixed-asset">
+                    <div class="investment__percentage" style="width: 54%;"></div>
+                </div>
+                <div>
+                    <span class="investment__value">$116 Trillion</span>
+                </div>
+            </div>
+
+            <div class="investment__data">
+                <div class="investment__names">
+                    <i class='bx bxs-globe investment__icon'></i>
+                    <span class="investment__name">Public Equities</span>
+                </div>
+                <div class="investment__bar investment__equities">
+                    <div class="investment__percentage" style="width: 33%;"></div>
+                </div>
+                <div>
+                    <span class="investment__value">$77 Trillion</span>
+                </div>
+            </div>
+
+            <div class="investment__data">
+                <div class="investment__names">
+                    <i class='bx bxs-line-chart investment__icon'></i>
+                    <span class="investment__name">S&P 500 Growth</span>
+                </div>
+                <div class="investment__bar investment__sp500">
+                    <div class="investment__percentage" style="width: 24.31%;"></div>
+                </div>
+                <div>
+                    <span class="investment__value">24.31%</span>
+                </div>
+            </div>
+
+            <div class="investment__data">
+                <div class="investment__names">
+                    <i class='bx bxs-dollar-circle investment__icon'></i>
+                    <span class="investment__name">Global Foreign Direct Investment (FDI)</span>
+                </div>
+                <div class="investment__bar investment__fdi">
+                    <div class="investment__percentage" style="width: 88%;"></div>
+                </div>
+                <div>
+                    <span class="investment__value">12% Decline</span>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="C:\Users\bette\Downloads\investment2023.jpg" alt="" class="investment__img">
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<!--===== NEWS =====-->
+        <section class="news_section" id="news">
+            <h2 class="section-title">News</h2>
+
+            <div class="news__container bd-grid">
+                <div>
+                    <h2 class="news__subtitle">Today's Headlines</h2>
+                    <p class="news__text">These headlines reflect the trends and concerns in the global oil and gold
+                        markets.</p>
+                    <div class="news__data">
+                        <div class="news__names">
+                            <!--i class='bx bxl-html5 news__icon'-->
+                            <span class="news__name">Global oil prices surged after renewed conflict in the Middle
+                                East, raising concerns about supply disruptions and triggering a market-wide price
+                                increase of 3%.
+                            </span>
+                        </div>
+
+
+                    </div>
+                    <div class="news__data">
+                        <div class="news__names">
+
+                            <span class="news__name">As energy markets evolve, China and India are emerging as
+                                dominant players in global oil demand, reshaping trade routes and stabilizing markets
+                                despite fluctuating oil prices.</span>
+                        </div>
+
+
+                    </div>
+                    <div class="news__data">
+                        <div class="news__names">
+
+                            <span class="news__name">As global currencies fluctuate, Russia and China have increased
+                                their gold reserves, signaling confidence in the precious metal's stability during
+                                uncertain economic times​(
+                                S&P Global
+                                ).</span>
+                        </div>
+
+
+                    </div>
+                    <div class="news__data">
+                        <div class="news__names">
+
+                            <span class="news__name">"Gold Prices Surge as Festival Season Approaches"
+                                With the festive season on the horizon, gold prices have shown a significant upward
+                                trend, leading to increased consumer demand. Analysts expect this surge to
+                                continue.</span>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div>
+                    <img src="#" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+
+
+            <!--===== investment research =====-->
+            <section class="work section" id="Investment Research">
+                <h2 class="section-title">Investment Research</h2>
+				<iframe src="Investment_Research.html" width="100%" height="600px"></iframe>
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" placeholder="Type your query.... " rows="10"
+                        class="contact__input"></textarea>
+                    <input type="button" value="Submit" class="contact__button button">
+                </form>
+            </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="jab.js"></script>
+        </section>
+    </main>
+
+    <!--===== SCROLL REVEAL =====-->
+</body>
+
+</html>
